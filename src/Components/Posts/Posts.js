@@ -19,7 +19,8 @@ import Card from "@material-ui/core/Card";
 import CardContent from '@material-ui/core/CardContent';
 import { makeStyles, useTheme } from "@material-ui/core/styles";
 import { Dashboard } from "@material-ui/icons";
-import WorkspaceButton from "./Components/WorkspaceButton";
+import WorkspaceButton from "../Dashboard/Components/WorkspaceButton";
+// import workspace from "./Components/WorkspaceButton";
 
 const drawerWidth = 240;
 
@@ -57,7 +58,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-function DashboardComponent(props) {
+function Posts(props) {
   const { window } = props;
   const classes = useStyles();
   const theme = useTheme();
@@ -183,8 +184,8 @@ function DashboardComponent(props) {
   );
 }
 
-DashboardComponent.propTypes = {
+Posts.propTypes = {
   window: PropTypes.func,
 };
 
-export default DashboardComponent;
+export default Posts;
